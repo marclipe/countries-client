@@ -1,0 +1,146 @@
+.header-container {
+  background-color: darkslateblue;
+  padding: 4rem;
+  margin-bottom: 2rem;
+}
+
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+h3, p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  padding: 0.25rem 0;
+  margin-right: auto;
+}
+
+p {
+  font-weight: 400;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  border-radius: 4px;
+}
+
+.container-card {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+}
+
+input {
+  margin: 5px;
+}
+
+.grid-item {
+  background-color: darkslateblue;
+  border: 1px solid transparent;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.add-country {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.form-container {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+}
+
+label {
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.input-text {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-text:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+.container-error {
+  padding: 10px 20px;
+  background-color: #3498db;
+  border-radius: 4px;
+  margin: 0 20px;
+}
+
+.button-delete {
+  background-color: #3498db;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  margin-left: auto;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-delete:hover {
+  background-color: #2980b9;
+}
+
+@media screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .button  {
+    margin-top: 0;
+  }
+
+  img {
+    width: 175px;
+    height: 122px;
+  }
+}
