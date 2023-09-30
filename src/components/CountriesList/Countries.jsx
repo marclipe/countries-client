@@ -10,8 +10,6 @@ import { Loading } from "../Loading/Loading";
 const urlBase = "http://localhost:3001/api/countries";
 
 export function Countries() {
-  // const [/*countries*/, /*setCountries*/] = useState([]);
-
   //4- custom hook
   const { data: myCountries, loading, error, refetchData } = useFetch(urlBase)
 
