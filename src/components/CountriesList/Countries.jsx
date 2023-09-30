@@ -120,7 +120,7 @@ export function Countries() {
                 />
               )}
               {!loading && (
-                <input className="button" type="submit" value="Create" />
+                <input className="button" type="submit" value="Add" />
               )}
             </div>
           </form>
